@@ -1,0 +1,6 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": { 
+       "image-loader": "./../../../../static/component/image-loader/image-loader"  
+    } 
+}

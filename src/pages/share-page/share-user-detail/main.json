@@ -1,0 +1,9 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": { 
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "image-loader":"./../../../../static/component/image-loader/image-loader",
+        "i-cell-group": "./../../../../static/iview-weapp/cell-group/index",
+        "i-cell": "./../../../../static/iview-weapp/cell/index"
+    } 
+}

@@ -1,0 +1,15 @@
+ <view class='emoji-wrapper'>
+  <view class='emoji-content'>
+    <swiper indicator-dots='true' class='emoji-content-swiper' indicator-color="#C5CDDA" current="{{currentIndex}}" indicator-active-color="#4B5264">
+     <block> 
+      <view style='display: inline-block;' wx:for="{{currentAlbumKeys}}"  wx:for-item="currentEmojiArr" wx:key="{{Math.random()}}" bindtap='emojiTap'>
+          <swiper-item>
+            <view class='emoji-content-item'  wx:for="{{currentEmojiArr}}"  wx:for-item="currentEmojiKey" wx:key="{{currentEmojiKey}}">
+              <image src="{{emojiList[currentAlbum][currentEmojiKey].img}}" class='{{currentAlbum == "emoji" ? "emoji-content-img-emoji" : "emoji-content-img-other"}}' data-emoji='{{currentEmojiKey}}'></image>
+            </view>
+          </swiper-item>
+        </view>  
+      </block>
+    </swiper>
+  </view>
+</view>

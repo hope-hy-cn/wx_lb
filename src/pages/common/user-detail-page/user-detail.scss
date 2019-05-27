@@ -1,0 +1,296 @@
+.user-cell{
+  color:#84838D;
+  font-size:30rpx  !important;
+  padding:12px 10px 12px 15px !important;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  &:active{
+    background:#F3F5F7;
+  }
+  .footer-color{
+    color:#413C44;
+    width:560rpx;
+    padding-right:32rpx;
+
+  }
+}
+.user-cell .cell-icon-img{
+  width:46rpx;
+  height:46rpx;
+  vertical-align:middle;
+}  
+.get-phone{
+  padding:0;
+  background:transparent;
+  text-align:left; 
+}
+.personal-data{ 
+  .tab-attr,.cell-group{
+    padding:0 30rpx;
+  }
+}
+.user-detail-page{
+    min-height: 100%;
+    background:#F3F5F7;
+    padding-bottom: 210rpx;
+    // position: relative;
+    // padding-top:590rpx;
+    .head-box{
+      // position: absolute;
+      // top:0;
+      // width:100%;
+      
+      .head-bg-img{
+        width:100%;
+        height:318rpx;
+        .img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .head-user-info{
+        height:272rpx;
+        padding-top:124rpx;
+        padding-bottom:56rpx;
+        background:#fff;
+        position: relative;
+        .vip-cap-box{
+          position: relative;
+          .vip-cap{
+            position: absolute;
+            top:-42rpx;
+            left:50%;
+            margin-left:-26rpx;
+            width:52rpx;
+            height:52rpx;
+          }
+        }
+        .head-img{
+          width:191rpx;
+          height:191rpx;
+          position: absolute;
+          top:-98rpx;
+          left:50%;
+          margin-left:-98rpx;
+          border-radius: 50%;
+          border:5rpx solid #fff;
+          .img{
+            width:100%;
+            height:100%;
+            border-radius: 50%;
+          }
+        }
+        .name{
+          font-size:48rpx;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:#354052;
+        }
+        .introduce{
+          font-size:28rpx;
+          font-family:PingFangSC-Light;
+          font-weight:300;
+          color:#A1A7AE;
+          padding:0 100rpx;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          margin-top:6rpx;
+        }
+        .text-info{
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          font-size:30rpx; 
+          color:#4E5761;
+          margin-top:16rpx;
+        }
+        .details{ 
+          width:164rpx;
+          height:48rpx; 
+          line-height:45rpx;
+          margin:24rpx auto 0;
+          padding-left:15rpx;
+          border-radius:24rpx;
+          border:1rpx solid #E1E6EB;
+          color:#FF5470;
+          font-size:24rpx;
+          font-family:PingFangSC-Regular;
+          font-weight:400; 
+          .right{
+            display:inline-block;
+            color:#D3D7DC;
+          }
+        }
+      } 
+    }
+    // .msg-tab-box{
+    //   width:100%;
+    //   height:100%;
+    //   // overflow:hidden; 
+    //   position:relative;
+    //   .msg-tab-content{
+    //     height:100%;
+    //     width:100%;
+    //     // overflow-y: scroll;
+    //     position:absolute;  
+    //   }
+    //   .msg-tab-one{
+    //     transform:translate(-100%, 0px) translateZ(0px); 
+    //     transition:all .4s;
+    //   }
+    //   .msg-tab-two{
+    //     transform:translate(100%, 0px) translateZ(0px); 
+    //     transition:all .4s;
+    //   }
+    //   .msg-tab-index{
+    //     transform:translate(0px, 0px) translateZ(0px); 
+    //     transition:all .4s; 
+    //   } 
+    // }
+    .tag-list{
+      width:100%;
+      background:#fff;
+      border-bottom:1rpx solid #E0E3E6;
+      margin-top:16rpx; 
+      .tag-item{
+        display:inline-block;
+        height: 96rpx;
+        line-height: 96rpx;
+        padding:0 20rpx; 
+        margin-left:50rpx;
+        font-size:24rpx;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#A1A7AE; 
+        position:relative;  
+      }
+      .tag-item-active{
+        font-size:32rpx;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:#4E5761;
+        &::after{
+          content:" ";
+          display:inline-block;
+          width:40rpx; 
+          position:absolute;
+          bottom:0;
+          left: 50%;
+          border-radius:4rpx;
+          margin-left:-20rpx;
+          border:4rpx solid #FF5470;
+        }
+      }
+    }
+    .content-box{
+      width:200vw;
+      height:auto;
+      display:flex;
+      transition:all .4s; 
+      .content-items{
+        flex:1;  
+        .rz-group{
+          width:100%;
+          background:#fff;
+          // padding:36rpx 0;
+          // margin-top:24rpx;
+          font-size:26rpx;
+          .title{
+            color:#1E1127;
+            font-size:30rpx;  
+            padding: 30rpx;
+            border-bottom:1rpx solid #EEEFF3;
+          }
+          .footer-pd-rt{
+            padding-right:16px;
+          }
+          // .id-text{
+            
+            p{
+              color:#94949C;
+            }
+            .name{
+              color:#413C44;
+            }
+            .wechat-btn{
+              color:#15D7A7;
+            }
+            .card-no{
+              color:#84838D;
+            }
+          // }
+          .null-text{
+            color:#94949C;
+          }
+        }
+      }  
+    } 
+    .items-one-active{
+      transform:translate(-100vw, 0px) translateZ(0px); 
+      transition:all .4s; 
+    }
+
+    .content-group{
+      width:100%;
+      background:#fff; 
+      padding:30rpx 0;
+      .title{
+        padding:0 44rpx;
+        font-size:30rpx;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#354052;
+      }
+      .photo-box{
+        width:100%;
+        margin-top:24rpx; 
+        padding-left:30rpx;
+        overflow: hidden;
+        .scroll-view{
+          width: 100%; 
+          white-space: nowrap;
+        }
+        .photo-img{
+          display:inline-block;
+          width:264rpx;
+          height:372rpx;  
+          margin-right:16rpx;
+          .img{
+            width:100%;
+            height:100%;
+            border-radius:6rpx;
+          }
+        }
+      }
+    }
+    .footer-box{
+      width:100%;
+      position: fixed;
+      bottom:0;
+      left:0;  
+      .img-box{
+        width:176rpx;
+        height:176rpx;
+        display:inline-block;
+        &:last-child{
+          margin-left:76rpx;
+        }
+        .icon{
+          width:100%;
+          height:100%;
+          transform:scale(1);
+          transition: transform .2s;
+        }
+        .icon-active{
+          transform:scale(1.2) !important;
+          transition: transform .2s !important;
+        }
+      } 
+    }
+  }
+  .text-info{
+    font-size:28rpx;
+    padding:85rpx 20rpx;
+    color:#808892;
+  }
+  

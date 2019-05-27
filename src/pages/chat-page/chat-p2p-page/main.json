@@ -1,0 +1,7 @@
+{ 
+    "navigationBarTitleText": " ",
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "component-emoji": "./../../../../static/component/emoji/emoji"
+    } 
+}

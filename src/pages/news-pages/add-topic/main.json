@@ -1,0 +1,6 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index"
+    } 
+}

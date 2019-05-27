@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "date-picker": "./../../../../static/component/date-picker/date-picker" 
+    } 
+}

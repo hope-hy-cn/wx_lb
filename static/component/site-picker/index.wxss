@@ -1,0 +1,106 @@
+.modal-mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .3;
+	overflow: hidden;
+	z-index: 30;
+	color: #fff
+}
+
+.datepicker {
+	position: fixed;
+    bottom: 64rpx;
+    left: 0;
+    width: 654rpx;
+    height: 474rpx;
+    margin-right: 48rpx;
+    margin-left: 48rpx;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 33;
+    overflow: hidden;
+}
+
+.datepicker-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fcfcfc;
+	color: #2f80f2;
+	font-size: 28rpx;
+	border-bottom: 1rpx solid #f2f2f2;
+	height: 108rpx;
+	padding: 0 10rpx;
+	border-top-left-radius: 10rpx;
+	border-top-right-radius: 10rpx
+}
+
+.datepicker-header .cancel {
+	flex: 0 0 140rpx;
+	font-size: 36rpx;
+    color: #353535;
+	padding: 20rpx 0;
+	text-align: center;
+}
+
+.datepicker-header .sub-btn {
+	flex: 0 0 140rpx;
+	font-size: 36rpx;
+    color: #ed373d;
+	padding: 20rpx 0;
+	text-align: center;
+}
+
+.datetype-select-right {
+	color: #669bfe
+}
+
+.datepicker-content {
+	height: 500rpx
+}
+
+picker-view {
+	width: 100%;
+	height: 210rpx;
+	background: #f2f2f2;
+	color: #222
+}
+
+picker-view-column {
+	text-align: center;
+	line-height: 70rpx;
+	font-size: 30rpx;
+	background: #fff
+}
+
+.datepicker-content-left{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 362rpx;
+    overflow: hidden;
+    margin-top: 6rpx;
+    margin-bottom: 6rpx;
+    justify-content: space-between;
+}
+
+/* .datepicker-content-left picker-view-column {
+	color: #1D2438
+} */
+
+.indicator-class {
+	height: 70rpx;
+	line-height: 70rpx
+}
+
+.decollator {
+	height: 480rpx;
+	line-height: 480rpx;
+	color: #1D2438;
+	font-size: 30rpx;
+	background: #fff;
+}

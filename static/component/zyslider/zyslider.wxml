@@ -1,0 +1,17 @@
+<!--component/zyslider.wxml-->
+<view class="container {{hideOption}}">
+   <view  wx:if="{{sliderType==='two'}}"> 
+        <view class="slider-item min" style="left:{{leftValue}}rpx;background-color:{{blockColor}};" catchtouchmove="_minMove"></view>
+        <view class="slider-item max" style="left:{{rightValue}}rpx;background-color:{{blockColor}};" catchtouchmove="_maxMove"></view>
+
+        <view class="slider-body left" style="left:0rpx; width:{{leftValue}}rpx;background-color:{{backgroundColor}};"></view>
+        <view class="slider-body body" style="left:{{leftValue}}rpx; width:{{rightValue-leftValue}}rpx;background-color:{{selectedColor}};"></view>
+        <view class="slider-body right" style="left:{{rightValue}}rpx; width:{{totalLength - rightValue+40}}rpx;background-color:{{backgroundColor}};"></view> 
+    </view>
+    
+    <view wx:if="{{sliderType==='one'}}"> 
+        <view class="slider-item min" style="left:{{oneValue}}rpx;background-color:{{blockColor}};" catchtouchmove="_noeMove"></view> 
+        <view class="slider-body one-left" style="left:0rpx; width:{{oneValue}}rpx;background-color:{{ selectedColor}};"></view>
+        <view class="slider-body one-body" style="left:0rpx; width:100%;background-color:{{backgroundColor}};"></view> 
+    </view> 
+</view>

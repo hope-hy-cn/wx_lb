@@ -1,0 +1,84 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"miniprogramRoot": "dist/",
+	"compileType": "miniprogram",
+	"appid": "wx4c6c3ed14736228c",
+	"projectname": "xm_wx",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "map-page",
+					"pathName": "pages/user-info/map-page/main",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "news",
+					"pathName": "pages/common/news/main",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "dispatch",
+					"pathName": "pages/news-pages/my-dispatch-page/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "topic",
+					"pathName": "pages/news-pages/add-topic/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "taglist",
+					"pathName": "pages/news-pages/tag-list/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tagDetail",
+					"pathName": "pages/news-pages/news-detail/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "singleDefault",
+					"pathName": "pages/common/my-detail-page/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "userDefault",
+					"pathName": "pages/common/user-detail-page/main"
+				}
+			]
+		}
+	}
+}

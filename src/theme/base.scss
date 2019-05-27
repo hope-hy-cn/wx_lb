@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+div,p{
+    box-sizing: border-box;
+}
+page{
+    min-height:100%;
+    background:#F7F8FF;
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.float-right{
+    float:right;
+}
+.float-left{
+    float:left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.font-bold{
+    font-weight: bold;
+}
+.iconfont{
+    font-size:28rpx;
+    display:inline-block;
+}
+
+.clear-both{
+  content:'';
+  overflow: hidden;
+  clear: both;  
+}
+button::after {
+  border: none
+}
+textarea{
+    height:auto;
+    min-height:50rpx;
+    max-height:100rpx;
+}
+
+
+@-webkit-keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+} 
+@keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/* line 6, ../sass/shimmer.scss */
+.placeholder-item-loader {
+  -webkit-animation-name: placeholder-shimmer;
+  -moz-animation-name: placeholder-shimmer;
+  -ms-animation-name: placeholder-shimmer;
+  -o-animation-name: placeholder-shimmer;
+  animation-name: placeholder-shimmer;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f6f7f8), color-stop(20%, #edeef1), color-stop(40%, #f6f7f8), color-stop(100%, #f6f7f8));
+  background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: -moz-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: -o-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  // height: 104px;
+  position: relative;
+  overflow: hidden;
+} 
+
+
+
+//上传头像
+.visible-sheet-mian{
+    padding:20rpx 0;
+    .sheet-title{ 
+      padding:40rpx; 
+      div{
+        font-size:30rpx;
+        color:#413C44;
+      }
+      p{
+        font-size:24rpx;
+        color:#84838D;
+        margin-top:10rpx;
+      }
+    }
+    .sheet-content{
+      width:680rpx;
+      height:120rpx;
+      margin:0 auto 10rpx;
+      .img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .sheet-btn{
+      width:100%;
+      height:88rpx;
+      line-height:88rpx;
+      font-size:30rpx;
+      color:#4A90E2;
+      border-top:1rpx solid #DFDFE0;
+      &:active{
+        opacity:.7;
+      }
+    }
+  }
+
+
+
+  .refresh-loading {
+    margin: 0 5px;
+    width: 50rpx;
+    height: 50rpx;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+    animation: weuiLoading 1s steps(12, end) infinite;
+    background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+    background-size: 100%;
+  }
+
+.wx-switch-input{width:85rpx !important;height:50rpx !important;}
+.wx-switch-input::before{width:85rpx !important;height: 50rpx !important;background: #D0D0D0 !important;}
+.wx-switch-input::after{width: 44rpx !important;height: 46rpx !important;}
+
+// gif
+.focusActive{
+  width:300rpx !important;
+  height:300rpx !important;
+  position: absolute;
+  top:50%;
+  left:50%; 
+  margin-left:-150rpx;
+  margin-top:-150rpx;
+  z-index:1000;
+  .img{ 
+    width:300rpx !important;
+    height:300rpx !important;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "i-load-more": "./../../../../static/iview-weapp/load-more/index",
+        "date-picker": "./../../../../static/component/date-picker/date-picker",
+        "city-picker": "./../../../../static/component/city-picker/city-picker"
+    } 
+}

@@ -1,0 +1,30 @@
+<view class="modal-mask" wx:if="{{ showPicker }}" bindtap="closeDatePickerPlus"></view>
+<view class="datepicker" wx:if="{{ showPicker }}" animation="{{animationData}}">
+    <view class="datepicker-header">
+        <view class="cancel"  hover-class="hover-class" bindtap="closeDatePickerPlus">
+            取消
+        </view>
+        <view class="sub-btn"  hover-class="hover-class" bindtap="submitSelectDate">
+            确定
+        </view>
+    </view>
+    <view class="datepicker-content">
+        <view class="datepicker-content-left">
+            <picker-view value="{{pickerIndex}}"  bindchange="bindDateGl" indicator-class="indicator-class">
+                <picker-view-column>
+                <view wx:for="{{oneListArr}}" wx:key=""  style="height: 70rpx; text-align:center; font-size: 36rpx; line-height:70rpx; color:#353535;">
+                {{item}}
+                </view>
+                </picker-view-column>
+                <view class="decollator text-center" wx:if="{{decollator}}">
+                ~
+                </view> 
+                <picker-view-column wx:if="{{type=='two'}}">
+                <view wx:for="{{twoListArr}}" wx:key=""  style="height: 70rpx; text-align:center; font-size: 36rpx; line-height:70rpx; color:#353535;">
+                {{item}}
+                </view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,91 @@
+{
+  "pages": [
+    "pages/common/index/main", 
+    "pages/common/message/main",
+    "pages/common/news/main",
+    "pages/common/user-detail-page/main",
+    "pages/common/my-detail-page/main",
+    "pages/common/fans/main",
+    "pages/photo-canvas/share-image/main",
+    "pages/chat-page/chat-p2p-page/main",
+    "pages/chat-page/push-message/main",
+    "pages/news-pages/my-dispatch-page/main",
+    "pages/news-pages/add-topic/main",
+    "pages/news-pages/tag-list/main",
+    "pages/news-pages/news-detail/main"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/login-page",
+      "pages": [
+        "bind-phone/main",
+        "fill-user-info/main"
+      ]
+    },
+    {
+      "root": "pages/user-info",
+      "pages": [
+        "edit-user-info/main" ,
+        "set-page/main" ,
+        "map-page/main" ,
+        "user-books/main" ,
+        "user-books-search/main", 
+        "verify-page/wx-verify/main",
+        "verify-page/id-verify/main",
+        "verify-page/academic-verify/main",
+        "verify-page/house-verify/main",
+        "verify-page/car-verify/main"
+      ]
+    },
+    {
+      "root": "pages/share-page",
+      "pages": [
+        "share-user-detail/main",
+        "share-news-detail/main"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "WeChat",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#354052",
+    "selectedColor": "#FF5470",
+    "borderStyle": "white",
+    "backgroundColor": "#FBFBFB",
+    "list": [
+      {
+        "text": "鲜萝卜",
+        "pagePath": "pages/common/index/main",
+        "iconPath": "static/image/tabBar-index.png",
+        "selectedIconPath": "static/image/tabBar-index-active.png"
+      },
+      {
+        "text": "兔窝",
+        "pagePath": "pages/common/news/main",
+        "iconPath": "static/image/tabBar-news.png",
+        "selectedIconPath": "static/image/tabBar-news-active.png"
+      },
+      {
+        "text": "聊天",
+        "pagePath": "pages/common/message/main",
+        "iconPath": "static/image/tabBar-message.png",
+        "selectedIconPath": "static/image/tabBar-message-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/common/my-detail-page/main",
+        "iconPath": "static/image/tabBar-myhome.png",
+        "selectedIconPath": "static/image/tabBar-myhome-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息将用于用户之间的距离显示"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{ 
+    "navigationBarTitleText": " ",
+    "usingComponents": { 
+        "i-icon": "./../../../../static/iview-weapp/icon/index", 
+        "i-button": "./../../../../../static/iview-weapp/button/index"  
+        
+    } 
+}

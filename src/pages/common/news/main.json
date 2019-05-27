@@ -1,0 +1,8 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": { 
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "c-bestlist": "./../../../../static/component/best-list/index",
+        "image-loader":"./../../../../static/component/image-loader/image-loader"
+    } 
+}

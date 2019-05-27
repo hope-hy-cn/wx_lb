@@ -1,0 +1,9 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": { 
+        "c-bestlist":"./../../../../static/component/best-list/index",
+        "image-loader": "./../../../../static/component/image-loader/image-loader",
+        "zy-slider": "./../../../../static/component/zyslider/zyslider",
+        "range-slider":"./../../../../static/component/range-slider/range-slider"
+    } 
+}

@@ -1,0 +1,42 @@
+<scroll-view scroll-y style="width:100%; height:100%; overflow:auto;">
+  <view class="best-list"> 
+      <!--<view class="best-head text-center">
+        <view class="title ">最佳精选</view>
+        <view class="text">每天为您推荐精心挑选的用户</view>
+      </view>-->
+      <view class="list-content clear-both"> 
+        <!--<view class="group text-center {{animationBack?'animation-back':''}}" bindtouchend="touchendBest" bindtouchcancel='touchendBest'   bindtouchstart='touchstartBest' bindtouchmove='touchmoveBest' wx:for="{{bestUserList}}" wx:for-item="bestUserItem" wx:for-index="bestUserIndex" wx:key="{{bestUserItem.ruuid}}" data-bestitem="{{bestUserItem}}"  style="transform:translate({{bestRuuid==bestUserItem.ruuid?bestTranslateX:0}}px,0) rotate({{bestRuuid==bestUserItem.ruuid?bestImgDeg:0}}deg); transform-origin:{{bestRuuid==bestUserItem.ruuid?bestImgOriginX:0}}%,{{bestRuuid==bestUserItem.ruuid?bestImgOriginY:0}}%;z-index:{{bestRuuid==bestUserItem.ruuid?1000:0}} "  catchtap="lookDetail"> -->
+        <view class="group text-center {{animationBack?'animation-back':''}}"  wx:for="{{bestUserList}}" wx:for-item="bestUserItem" wx:for-index="bestUserIndex" wx:key="{{bestUserItem.ruuid}}" data-bestitem="{{bestUserItem}}" style="transform:translate({{bestRuuid==bestUserItem.ruuid?bestTranslateX:0}}px,0) rotate({{bestRuuid==bestUserItem.ruuid?bestImgDeg:0}}deg); transform-origin:{{bestRuuid==bestUserItem.ruuid?bestImgOriginX:0}}%,{{bestRuuid==bestUserItem.ruuid?bestImgOriginY:0}}%;z-index:{{bestRuuid==bestUserItem.ruuid?1000:0}} "  catchtap="lookDetail"> 
+          <view class="group-content" animation="{{bestRuuid==bestUserItem.ruuid&&isLikeRight?bestAnimationRight:bestAnimationRightNull}}" style="" > 
+            <image-loader src="{{bestUserItem.photo[0].link}}?x-oss-process=image/resize,w_250" image-style="width:100%;height:100%;border-radius:20rpx;" ></image-loader> 
+            <!--标签--> 
+            <view  wx:if="{{bestUserItem.is_show}}">
+              <view  wx:if="{{bestRuuid==bestUserItem.ruuid}}"> 
+                <view class="like-img" style="opacity:{{bestSelectLike}}">
+                  <image class="img"  src='/static/image/select-like.png'  ></image> 
+                </view>
+                <view class="super-like-img" style="opacity:{{bestSelectSuperLike}}">
+                  <image class="img"  src='/static/image/select-super-like.png'  ></image> 
+                </view>
+              </view>
+            </view> 
+              <!--底部-->
+              <view class="footer">
+                <view class="hint" >
+                  <view class="name">{{bestUserItem.nickname}} , {{bestUserItem.age}}</view>
+                  <view class="time" wx:if="{{nowDateHours}}">剩余{{nowDateHours}}小时</view>
+                </view>
+                <view class="footer-icon text-center"  data-superitem="{{bestUserItem}}" catchtap="bestSuperLike"> 
+                  <image class="img {{bestHeartActive?'add-heart-active':''}}" src='/static/image/heart-mode.png'></image>  
+                </view>
+              </view> 
+          </view> 
+          <view  wx:if="{{!bestUserItem.is_show}}" class="mould-box"></view>
+          
+        </view> 
+        
+          
+      </view>
+  </view> 
+</scroll-view>
+

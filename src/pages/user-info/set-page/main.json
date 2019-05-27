@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "zy-slider": "./../../../../static/component/zyslider/zyslider"  
+    } 
+}

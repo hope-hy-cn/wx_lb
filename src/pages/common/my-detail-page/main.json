@@ -1,0 +1,17 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index",
+        "i-load-more": "./../../../../static/iview-weapp/load-more/index",
+        "i-button": "./../../../../static/iview-weapp/button/index",
+        "i-cell-group": "./../../../../static/iview-weapp/cell-group/index",
+        "i-cell": "./../../../../static/iview-weapp/cell/index",
+        "date-picker": "./../../../../static/component/date-picker/date-picker",
+        "city-picker": "./../../../../static/component/city-picker/city-picker",
+        "public-picker": "./../../../../static/component/public-picker/index",
+        "site-picker": "./../../../../static/component/site-picker/index",
+        "image-loader":"./../../../../static/component/image-loader/image-loader",
+        "zy-slider": "./../../../../static/component/zyslider/zyslider",
+        "range-slider":"./../../../../static/component/range-slider/range-slider"
+    }
+}

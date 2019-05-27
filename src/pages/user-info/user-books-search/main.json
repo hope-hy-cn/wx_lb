@@ -1,0 +1,11 @@
+{ 
+    "navigationBarTitleText": " ",
+    "enablePullDownRefresh":true, 
+    "usingComponents": {
+        "i-icon": "./../../../../static/iview-weapp/icon/index", 
+        "i-tabs": "./../../../../static/iview-weapp/tabs/index",
+        "i-tab": "./../../../../static/iview-weapp/tab/index",
+        "i-button": "./../../../../static/iview-weapp/button/index",
+        "i-load-more": "./../../../../static/iview-weapp/load-more/index" 
+    } 
+}
